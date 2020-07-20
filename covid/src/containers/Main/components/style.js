@@ -22,6 +22,6 @@ export const CardPanelContentStyled = styled(CardContent)`
 
 export const ItemStyled = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  
   min-width: 150px;
 `
