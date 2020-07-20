@@ -14,7 +14,7 @@ function Main() {
       .then(data => setData(data))
   }, [])
 
-  useEffect(() =>{
+  useEffect(() => {    
     getCovidData(country)
   }, [getCovidData, country])
 
@@ -25,18 +25,19 @@ function Main() {
 
   return (
     <ContainerStyled>
-      <div className="mb-2">      
+      <div className="mb-2">
         <Panel
           data={data}
           updateAt={updateAt}
-          onchange={handleChange}
+          onChange={handleChange}
           country={country}
           getCovidData={getCovidData}
-          />
+        />
       </div>
       <Board data={data} />
+      
     </ContainerStyled>
-
   )
 }
+
 export default memo(Main)

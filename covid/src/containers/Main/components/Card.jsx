@@ -1,19 +1,18 @@
 import React, { memo } from 'react'
-import PropTypes from 'prop-types'
 import { Card as CardUI } from '../../../components'
 import {
   LabelStyled,
   ValueStyled,
-  CardContentStyle
+  CardContentStyled
 } from './style'
 
 function Card({ value, label, color }) {
   return (
     <CardUI>
-      <CardContentStyle color={color}>
+      <CardContentStyled color={color}>
         <ValueStyled>{value}</ValueStyled>
-        <ValueStyled>{label}</ValueStyled>
-      </CardContentStyle>
+        <LabelStyled>{label}</LabelStyled>
+      </CardContentStyled>
     </CardUI>
   )
 }
