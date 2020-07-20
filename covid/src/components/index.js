@@ -4,7 +4,7 @@ import Grid from './Grid'
 import Typography from './Typography'
 import Skeleton from './Skeleton'
 import Select from './Select'
-import Menuitem from './Menuitem'
+import MenuItem from './MenuItem'
 
 
 export {
